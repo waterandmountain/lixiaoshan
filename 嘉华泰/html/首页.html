@@ -1,0 +1,801 @@
+<!-- http://www.bj-huatai.com#page6 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/首页.css">
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="fullpage.js"></script>
+	
+</head>
+<body>
+
+	<div id="menus">
+		<div id="menus_all">
+		<img src="../img/menu-txt.png" id="menus_img">
+		<div id="menu_icon">
+			<span id="menu_top"></span>
+			<span id="menu_center"></span>
+			<span id="menu_bottom"></span>
+		</div>
+		</div>
+	</div>
+	<div id="mengban_center">
+			<ul>
+				<li data-menuanchor='page1'>
+					<div>
+						<a href="#page1"></a>
+						<p class="p_01">01</p>
+						<p class="p_02"></p>
+						<p class="p_03">网站首页</p>
+					</div>
+					<span class="mb_top"></span>
+					<span class="mb_right"></span>
+					<span class="mb_bottom"></span>
+					<span class="mb_left"></span>
+				</li>
+				<li data-menuanchor='page2'>
+					<div>
+						<a href="#page2"></a>
+						<p class="p_01">02</p>
+						<p class="p_02"></p>
+						<p class="p_03">产品展示</p>
+					</div>
+					<span class="mb_top"></span>
+					<span class="mb_right"></span>
+					<span class="mb_bottom"></span>
+					<span class="mb_left"></span>
+				</li>
+				<li data-menuanchor='page3'>
+					<div>
+						<a href="#page3"></a>
+						<p class="p_01">03</p>
+						<p class="p_02"></p>
+						<p class="p_03">关于我们</p>
+					</div>
+					<span class="mb_top"></span>
+					<span class="mb_right"></span>
+					<span class="mb_bottom"></span>
+					<span class="mb_left"></span>
+				</li>
+				<li data-menuanchor='page4'>
+					<div>
+						<a href="#page4"></a>
+						<p class="p_01">04</p>
+						<p class="p_02"></p>
+						<p class="p_03">案例展示</p>
+					</div>
+					<span class="mb_top"></span>
+					<span class="mb_right"></span>
+					<span class="mb_bottom"></span>
+					<span class="mb_left"></span>
+				</li>
+				<li data-menuanchor='page5'>
+					<div>
+						<a href="#page5"></a>
+						<p class="p_01">05</p>
+						<p class="p_02"></p>
+						<p class="p_03">团队展示</p>
+					</div>
+					<span class="mb_top"></span>
+					<span class="mb_right"></span>
+					<span class="mb_bottom"></span>
+					<span class="mb_left"></span>
+				</li>
+				<li data-menuanchor='page6'>
+					<div>
+						<a href="#page6"></a>
+						<p class="p_01">06</p>
+						<p class="p_02"></p>
+						<p class="p_03">合作伙伴</p>
+					</div>
+					<span class="mb_top"></span>
+					<span class="mb_right"></span>
+					<span class="mb_bottom"></span>
+					<span class="mb_left"></span>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$("#mengban_center li").on("click",function(){
+					limiao();
+					$(this).children("span").eq(0).css({
+						"width":"180px",
+						"height":"5px"
+					})
+					$(this).children("span").eq(1).css({
+						"width":"5px",
+						"height":"180px"
+					})
+					$(this).children("span").eq(2).css({
+						"width":"180px",
+						"height":"5px"
+					})
+					$(this).children("span").eq(3).css({
+						"width":"5px",
+						"height":"180px"
+					})
+					if($("#menus_all").offset().left==120){
+								$("#mengban_center").fadeOut(500)
+								$("#menus_all").animate({
+								"left":"-80px"
+							},700,function(){
+								$("#menu_top").css({
+									"transform": "rotate(0deg)",
+									"position": "absolute",
+									"top": "0px"
+								});
+								$("#menu_center").css({
+									"opacity":"1"
+								});
+								$("#menu_bottom").css({
+									"transform": "rotate(0deg)",
+									"position": "absolute",
+									"top": "16px"
+								})
+							})
+							}
+					 $("#mengban_center").fadeOut();
+					 
+				})
+				$("#mengban_center li").on("mouseenter",function(){
+					$(this).children("span").show();
+					$(this).children("span").stop(true);
+					$(this).children("span").eq(0).animate({
+						"width":"180"
+					},250)
+					$(this).children("span").eq(1).animate({
+						"height":"180"
+					},250)
+					$(this).children("span").eq(2).animate({
+						"width":"180"
+					},250)
+					$(this).children("span").eq(3).animate({
+						"height":"180"
+					},250)
+				})
+				$("#mengban_center li").on("mouseleave",function(){
+					$(this).children("span").stop(true);
+					$(this).children("span").eq(0).animate({
+						"width":"0"
+					},250)
+					$(this).children("span").eq(1).animate({
+						"height":"0"
+					},250)
+					$(this).children("span").eq(2).animate({
+						"width":"0"
+					},250)
+					$(this).children("span").eq(3).animate({
+						"height":"0"
+					},250)
+				})
+			})
+		</script>
+	<p id="dizhi">
+		北京嘉华泰科技发展有限公司 京ICP备16061931号
+	</p>
+	<div id="news_ban">
+		<div id="off">
+			x
+		</div>
+		<div id="ban_one">
+			<div class="ban_top">
+				<span class="ban_top_left">NEWS 新闻动态</span>
+				<span class="ban_top_right">
+					<div class="btr_one">1  /  2</div>
+					<div class="btr_two"><</div>
+					<div class="btr_three">></div>
+				</span>
+			</div>
+			<div class="ban_bottom">
+				<div class="bb_one">
+					<div class="bb_one_left">
+						<img src="../img/20170829090858_34507.jpg">
+					</div>
+					<div class="bb_one_right">
+						<span class="bb_h2"><h2>“小程序·大未来”——天津站微信小程序项目发布会圆满举行</h2></span>
+						<span>
+							<p class="bb_p">时至今日小程序都一直披着神秘的面纱，让人们无法窥其全貌，然而2017年7月29日，在天津市赛象酒店一场由天津市华泰科技集团与微信联合举办的“小程序项目天津站发布会”为广大天津企业家们揭开了它的神秘面纱。</p>
+						</span>
+					</div>
+				</div>
+					<div class="bb_one">
+					<div class="bb_one_left">
+						<img src="../img/20170829091229_37001.jpg">
+					</div>
+					<div class="bb_one_right">
+						<span class="bb_h2"><h2>“荣誉·突破”——2017年上半年华泰科技集团颁奖暨拓展大会圆满落幕</h2></span>
+						<span>
+							<p class="bb_p">2017年7月16日，天津市华泰科技集团于杨柳青庄园举办颁奖拓展大会，参会人员为华泰科技集团全体员工，董事长李秋玲，执行董事尹四杰，总经理李贺出席本次大会，本次大会旨在，表彰先进、鞭策后进，通过拓展活动等形式增强公司的集体荣誉感和凝聚力。</p>
+						</span>
+					</div>
+				</div>
+				<div class="bb_one">
+					<div class="bb_one_left">
+						<img src="../img/20170829091552_30893.jpg">
+					</div>
+					<div class="bb_one_right">
+						<span class="bb_h2"><h2>"勿忘初心，继续前进”—2017年华泰科技集团年中管理层大会圆满落幕</h2></span>
+						<span>
+							<p class="bb_p">2017年7月15日，天津市华泰科技集团于华夏大酒店举办了年中管理层大会，华泰科技集团董事长李秋玲女士，执行董事尹四杰，总经理李贺女士出席本次会议，会议主题是“勿忘初心，继续前进”</p>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="ban_two">
+			<div id="ban_one">
+			<div class="ban_top">
+				<span class="ban_top_left">NEWS 新闻动态</span>
+				<span class="ban_top_right">
+					<div class="btr_one">2  /  2</div>
+					<div class="btr_two"><</div>
+					<div class="btr_three">></div>
+				</span>
+			</div>
+			<div class="ban_bottom">
+				<div class="bb_one">
+					<div class="bb_one_left">
+						<img src="../img/20170829091904_85992.jpg">
+					</div>
+					<div class="bb_one_right">
+						<span class="bb_h2"><h2>天津市华泰科技集团与天津迅腾科技集团关于建立人才合作关系签约仪式圆满举行</h2></span>
+						<span>
+							<p class="bb_p">5月2日下午，天津市华泰科技集团与天津迅腾科技集团关于建立人才合作关系签约仪式，在天津市华泰科技集团总部13楼正式举行。</p>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<ul id="menu">
+			<li data-menuanchor='page1'>
+				<a href="#page1"></a>
+			</li>
+			<li data-menuanchor='page2'>
+				<a href="#page2"></a>
+			</li>
+			<li data-menuanchor='page3'>
+				<a href="#page3"></a>
+			</li>
+			<li data-menuanchor='page4'>
+				<a href="#page4"></a>
+			</li>
+			<li data-menuanchor='page5'>
+				<a href="#page5"></a>
+			</li>
+			<li data-menuanchor='page6'>
+				<a href="#page6"></a>
+			</li>
+		</ul>
+		<div id="right_logo">
+			<img src="../img/20170904075131_25757.png">
+		</div>
+		<div id="dongtai">
+			<a href="javascript:;" id="news">NEWS 新闻动态</a>
+			<span id="dongtai_span">
+				<div>></div>
+			</span>
+		</div>
+
+	<div id="all">
+		   <!-- 第一块 -->
+		<div id="box" class="section active">
+		<div id="img_box">
+			<ul>
+			<li class="first"><img src="../img/20170815060718_86044.jpg"></li>
+			<li><img src="../img/20170815060947_54178.jpg"></li>
+			<li><img src="../img/20170828023450_24911.jpg"></li>
+			</ul>
+		</div>
+		<div id="btns">
+			<div id="left_btn"><</div>
+			<div id="right_btn">></div>
+		</div>
+	</div>
+	    <!-- 第二个 -->
+	    <div id="dierge" class="section">
+	    	<div id="spzs">
+	    		<div>
+	    			<img src="../img/20170803073046_61476.png">
+	    		</div>
+	    		<div>
+	    			<h2>产品展示</h2>
+	    		</div>
+	    		<div>
+	    			<p>我们致力于帮助<br>中国企业实现真正意义上的效果营销</p>
+	    		</div>
+	    	</div>
+	    	  <!-- 数据 -->
+	    	<div class="logo_two" id="two_logo">
+	    		
+	    	</div>
+	    	 <!-- 模板 -->
+	    	<script type="text/ass" id="ass">
+	    			<div>
+	    			<img src="@imgs@">
+	    			<span>
+	    				<ul>
+	    					<li>@li1@</li>
+	    					<li>@li2@</li>
+	    				</ul>
+	    				<p>@ps@</p>
+	    			</span>
+	    		</div>
+	    	</script>
+	    	<script type="text/javascript">
+	    		$.get("../js/zhanshi.txt",function(data){
+	    			var datas = eval("("+data+")").data;
+	    			// var datass = datas.data;
+	    			// console.log(datas)
+	    			var ass = $("#ass").html();
+	    			for (var i = 0; i < datas.length; i++) {
+	    				var lixiao = bang(ass,datas[i]);
+	    				$("#two_logo").append(lixiao)
+	    			}
+
+	    		})
+	    			function bang(a,b){
+		return a.replace(/\@([a-z\w]+[0-9]?)\@/g,function(marth,$1,index,string){
+			return b[$1];
+		});
+	};
+	    	</script>
+	    </div>
+
+	    <!-- 第三块 -->
+	    <div id="sankuai" class="section">
+	    	
+
+	    	<div id="sk_left"><</div>
+	    	<div id="sk_right">></div>
+	    	<div id="sk_yanshi">
+	    		<div id="sk_ys_one"><img src="../img/20170803074509_66401.png"></div>
+	    		<div id="sk_ys_two"></div>
+	    		<div id="sk_ys_three"><h3>关于我们</h3></div>
+	    	</div>
+	    	<div id="sk_all">
+	    	<div class="sk_gigg">
+	    		<img src="../img/bg03.jpg" class="biggs">
+	    		<span class="sk_sp">
+	    			<p><img src="../img/20170826091547_83410.jpg"></p>
+	    			<span>
+	    				<ul>
+	    					<li><h3>公司使命</h3></li>
+	    					<li><p></p></li>
+	    					<li class="lkisan">为客户创造独特价值，为员工成就创业梦想</li>
+	    				</ul>
+	    			</span>
+	    		</span>
+	    	</div>
+	    	<div class="sk_gigg">
+	    		<img src="../img/bg03.jpg" class="biggs">
+	    		<span class="sk_sp">
+	    			<p><img src="../img/20170826090159_52843.jpg"></p>
+	    			<span>
+	    				<ul>
+	    					<li>关于我们</li>
+	    					<li><p></p></li>
+	    					<li>
+	      协作   敬业   诚信   感恩 高效</li>
+	    				</ul>
+	    			</span>
+	    		</span>
+	    	</div>
+	    	<div class="sk_gigg">
+	    		<img src="../img/bg03.jpg" class="biggs">
+	    		<span class="sk_sp">
+	    			<p><img src="../img/20170826091726_31857.jpg"></p>
+	    			<span>
+	    				<ul>
+	    					<li>公司愿景</li>
+	    					<li><p></p></li>
+	    					<li>成为一家持续领先的互联网100年企业</li>
+	    				</ul>
+	    			</span>
+	    		</span>
+	    	</div>
+	    	</div>
+	    </div>
+	     <!-- 第四块 -->
+	     <div id="sikuai" class="section">
+	     	<div id="sik_xian">
+	     		<div><img src="../img/20170803080141_56939.png"></div>
+	     		<div><span></span></div>
+	     		<div><h2>案例展示</h2></div>
+	     		<div><p>高端   大气 </p></div>
+	     	</div>
+	     	<div id="sikuai_left"><</div>
+	     	<div id="sikuai_right">></div>
+	     	<div id="sik_all">
+	     		<div id="sik_little">
+	     			
+	     		</div>
+	     	</div>
+	     </div>
+	     <script type="text/jas" id="sikuai_muban">
+	     	<ul>
+	     				<li>
+	     					<img src="@imgs@">
+	     					<span>
+	     						<p>@pss@</p>
+	     						<h3>@h3@</h3>
+	     						<div>@rights@</div>
+	     					</span>
+	     				</li>
+	     			</ul>
+	     </script>
+	     <script type="text/javascript">
+	     	$.get("../js/disikuai.json",function(data){
+	     		// console.log(data)
+	     		var datass = eval("("+data+")").data;
+	     		var disukuai = $("#sikuai_muban").html();
+	     		for (var i = 0; i < datass.length; i++) {
+	     			var liss = bang(disukuai,datass[i]);
+	     			$("#sik_little").append(liss)
+	     		}
+	     	})
+	 //     	function bang(a,b){
+		// return a.replace(/\@([a-z\w]+[0-9]?)\@/g,function(marth,$1,index,string){
+		// 	return b[$1];
+		// });
+	     </script>
+	     <!-- 第五块 -->
+	     <div id="diwukuai" class="section">
+	     	<div id="diwukuai_top">
+	     		<div><img src="../img/20170803084147_80749.png"></div>
+	     		<div><span></span></div>
+	     		<div><h2>团队展示</h2></div>
+	     		<div><p>北京嘉华泰团队是一群来自全国各地富有理想、有特别之处的年轻人，机智且靠谱，有趣且欢乐。</p></div>
+	     	</div>
+	     	<div id="wukuai">
+	    
+	     	</div>
+	     </div>
+	     <script type="text/miao" id="wukuai_muban">
+	     	 		<div>
+	     			<img src="@img@">
+	     			<span>
+	     				<p class="weih2">@p1@</p>
+	     				<p class="xiabiao"></p>
+	     				<p>@p2@</p>
+	     			</span>
+	     		</div>
+	     </script>
+	     <script type="text/javascript">
+	     	$.get("../js/wukuai.json",function(data){
+	     		// console.log(data)
+	     	 var darta = eval("("+data+")").data;
+	     	 var wukuai = $("#wukuai_muban").html();
+	     	 for (var i = 0; i < darta.length; i++) {
+	     	 	var bangs = bang(wukuai,darta[i]);
+	     	 	$("#wukuai").append(bangs
+	     	 		)
+	     	 }
+	     	})
+	     </script>
+	     <!-- 第六块 -->
+	     <div id="diliukuai" class="section">
+	     	<div id="diliukuai_left"><</div>
+	     	<div id="diliukuai_right">></div>
+	     	<div id="liukuai_all">
+	     		<div id="liukuai_sub">
+	     			<div>
+	     				<img src="../img/20170904035631_75945.jpg">
+	     				<span>
+	     					<p>利人生物</p>
+	     					<p class="diliu_right">></p>
+	     				</span>
+	     			</div>
+	     			<div>
+	     				<img src="../img/20170904035845_23070.jpg">
+	     				<span>
+	     					<p>优森家具</p>
+	     					<p class="diliu_right">></p>
+	     				</span>
+	     			</div>
+	     			<div>
+	     				<img src="../img/20170904040107_40396.jpg">
+	     				<span>
+	     					<p>邦威家具</p>
+	     					<p class="diliu_right">></p>
+	     				</span>
+	     			</div>
+	     			<div>
+	     				<img src="../img/20170904040315_30050.jpg">
+	     				<span>
+	     					<p>先鑫捷通</p>
+	     					<p class="diliu_right">></p>
+	     				</span>
+	     			</div>
+	     			<div>
+	     				<img src="../img/20170904040429_18736.jpg">
+	     				<span>
+	     					<p>中建发</p>
+	     					<p class="diliu_right">></p>
+	     				</span>
+	     			</div>
+	     			<div>
+	     				<img src="../img/20170904040627_66458.jpg">
+	     				<span>
+	     					<p>鲜时光</p>
+	     					<p class="diliu_right">></p>
+	     				</span>
+	     			</div>
+	     			<div>
+	     				<img src="../img/20170904040822_24265.jpg">
+	     				<span>
+	     					<p>福成五丰</p>
+	     					<p class="diliu_right">></p>
+	     				</span>
+	     			</div>
+	     		</div>
+	     	</div>
+	     </div>
+
+	</div>
+
+			
+			<script type="text/javascript">
+				$(function(){
+				$('#all').fullpage({
+					// sectionsColor:['red','orange','blue','green'],
+					anchors:['page1','page2','page3','page4','page5','page6'],
+					menu:'#menu',
+				});
+			})
+				$(function(){
+					$("#dongtai").on("mouseenter",function(){
+						$("#dongtai_span").animate({
+							"width":"150px"
+						},250);
+						$("#news").css("color","white")
+					})
+					$("#dongtai").on("mouseleave",function(){
+						$("#dongtai_span").animate({
+							"width":"30px"
+						},250);
+						$("#news").css("color","skyblue")
+					})
+				})
+				$(function(){
+					  // 轮播
+					var autoNum = 0;
+				var timer = setInterval(actionFn,2000);
+				function actionFn(){
+					if($("#img_box li").eq(autoNum).is(":animated")){
+						return;
+					}
+					autoNum++;
+					autoNum%=3;
+					  // 选中的淡入其他的淡出
+					$("#img_box li").eq(autoNum).fadeIn(500).siblings().fadeOut(500)
+					changeColor()
+				}
+				$("#right_btn").on("click",actionFn)
+				$("#left_btn").on("click",function(){
+					if($("#img_box li").eq(autoNum).is(":animated")){
+						return;
+					}
+					autoNum-=2;
+					actionFn()
+				})
+				function changeColor(){
+					var nums = autoNum<=3?autoNum:0;
+					$("#dian_box li").eq(nums).addClass("select").siblings().removeClass("select");
+					actionFn()
+				}
+				})
+					// 第二块
+					$(function(){
+						$("#two_logo div").on("mouseenter",function(){
+							$(this).children().animate({
+								"bottom":"60px",
+								"opacity":"1"
+							},500)
+						}).on("mouseleave",function(){
+							$(this).children().animate({
+								"bottom":"0px",
+								
+							})
+						})
+					})
+
+					// 第三块
+					$(function(){
+					var nnn = 0;
+						$("#sk_left").on("click",function(){
+							$("#sk_all").stop(true);
+						nnn++;
+							
+							if (nnn>2) {
+								nnn=0;
+								$("#sk_all").animate({
+									"left":"0" 
+								},666);
+							}else{
+								console.log(nnn)
+								$("#sk_all").animate({
+									"left":"-=1920" 
+								},666);
+							}
+							console.log($("#sk_all").scrollLeft())
+						})
+					$("#sk_right").on("click",function(){
+						$("#sk_all").stop(true);
+						 nnn--;
+						 if (nnn<0) {
+						 	nnn=2;
+						 	$("#sk_all").animate({
+									"left":"-3840" 
+								},666);
+						 }else{
+						 	$("#sk_all").animate({
+						 		"left":"+=1920"
+						 	},666)
+						 }
+					})
+						
+					})
+
+					// 第四块
+					$(function(){
+						$("#sik_little li").on("mouseenter",function(){
+							$(this).children().animate({
+								"bottom":"120px",
+								"opacity":"1"
+							},800)
+						}).on("mouseleave",function(){
+							$(this).children().animate({
+								"bottom":"0px",
+								
+							},500)
+						})
+							var sikuainum = 0;
+						$("#sikuai_left").on("click",function(){
+							$("#sik_little").stop(true);
+							sikuainum--;
+							console.log(sikuainum)
+							if (sikuainum<0) {
+								console.log(111)
+								sikuainum=2;
+								$("#sik_little").animate({
+									"left":"-2120"
+								},1000)
+							}else{
+								$("#sik_little").animate({
+								"left":"+=1060"
+							},1000)
+							}
+							
+						})
+
+						$("#sikuai_right").on("click",function(){
+							 $("#sik_little").stop(true);
+							 sikuainum++;
+							 if (sikuainum>=3) {
+							 	sikuainum=0;
+							 	$("#sik_little").animate({
+								"left":"0"
+								},1000)
+							 }else{
+							 	$("#sik_little").animate({
+								"left":"-=1060"
+							},1000)
+							 }
+						})
+					})
+
+					// 第五快
+					$(function(){
+						$("#wukuai div").on("mouseenter",function(){
+							$(this).children().next().fadeIn(1000)
+						})
+						$("#wukuai div").on("mouseleave",function(){
+							$(this).children().next().fadeOut(1000)
+						})
+					})
+					// 第六块
+					$(function(){
+						$("#liukuai_sub div").on("mouseenter",function(){
+							$(this).children().animate({
+								"bottom":"10px",
+								// "opacity":"1"
+							},500)
+						}).on("mouseleave",function(){
+							$(this).children().stop()
+							$(this).children().animate({
+								"bottom":"-80px",
+								
+							},500)
+						})
+						$("#diliukuai_left").on("click",function(){
+							$("#liukuai_sub").animate({
+								"left":"-600px"
+							},1200)
+						})
+						$("#diliukuai_right").on("click",function(){
+							$("#liukuai_sub").animate({
+								"left":"0px"
+							},1200)
+						})
+					})
+
+					$(function(){
+						$("#dongtai").on("click",function(){
+							$("#news_ban").fadeIn(500)
+						})
+						$("#off").on("click",function(){
+							$("#news_ban").fadeOut(500)
+						})
+						$(".btr_three").on("click",function(){
+							$("#ban_one").hide();
+							$("#ban_two").show()
+
+						})
+						$(".btr_two").on("click",function(){
+							$("#ban_one").show();
+							$("#ban_two").hide()
+
+						})
+					})
+					limiao();
+					function limiao(){
+						$(function(){
+
+						$("#menus_all").on("click",function(){
+							// console.log($("#menus_all").offset().left)
+							$("#mengban_center").fadeIn(500);
+							if ($("#menus_all").offset().left==20) {
+								$("#menus_all").animate({
+								"left":"20px"
+							},500,function(){
+								$("#menu_top").css({
+									"transform": "rotate(45deg)",
+									"position": "absolute",
+									"top": "5px"
+								});
+								$("#menu_center").css({
+									"opacity":"0"
+								});
+								$("#menu_bottom").css({
+									"transform": "rotate(-45deg)",
+									"position": "absolute",
+									"top": "5px"
+								})
+							}
+						)
+							}else if($("#menus_all").offset().left==120){
+								$("#mengban_center").fadeOut(500)
+								$("#menus_all").animate({
+								"left":"-80px"
+							},500,function(){
+								$("#menu_top").css({
+									"transform": "rotate(0deg)",
+									"position": "absolute",
+									"top": "0px"
+								});
+								$("#menu_center").css({
+									"opacity":"1"
+								});
+								$("#menu_bottom").css({
+									"transform": "rotate(0deg)",
+									"position": "absolute",
+									"top": "16px"
+								})
+							})
+							}
+							
+
+					})
+					})
+					}
+
+
+			</script>
+</body>
+</html>
