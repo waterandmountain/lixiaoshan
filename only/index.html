@@ -25,12 +25,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <style>
 	.logoss{
 		width: 60%;
-		height:60%;
+		height:100px;
 		/* border:1px solid red; */
 	}
+	@media (max-width: 768px) {
+  .logoss {
+    margin: 0 auto;
+  }
+  .work-right{
+	  text-align: center;
+  }
+  .work-left{
+	text-align: center;
+  }
+}
 	.logoss img{
 		width: 100%;
-		height: auto;
+		height: 100%;
 	}
 	.lightbox{
 		display: inline-block;
@@ -49,13 +60,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		transform: scale(1);
 	}
 </style>
-<!-- //js -->
-<!-- <link href='//fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet"> -->
-
-
-<!-- start-smooth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
@@ -66,7 +70,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	});
 </script>
-<!-- start-smooth-scrolling -->
 </head>
 	
 <body>
@@ -76,7 +79,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container banner-drop">
 				<div class="header">
 					<div class="header-left logo">
-						<h1><a href="index.html">Elegant Resume</a></h1>
+						<h1><a href="index.html">木 子 三 水 太 郎</a></h1>
 					</div>
 					<div class="header-right">
 						<nav>
@@ -103,7 +106,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="clearfix"> </div>
 				</div>
 				<div class="name" >
-					<h2>LIXIAOShan--HOME</h2>
+					<h2>LIXIAOSHAN--HOME</h2>
 					<p> Web Designer & Developer</p>
 				</div>
 				<div class="social-icons animated wow bounceInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
@@ -116,7 +119,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 							<div class="banner-btm-grid-w3ls">
-		<div class="banner-left-wthree">
+		<div class="banner-left-wthree" id="xiu">
 			<img src="images/2.jpg" alt=" " class="img-responsive">
 			<ul class="address">
 					
@@ -162,6 +165,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  });
 				  
 				})(jQuery);
+				
 			</script>
 		
 	</div>
@@ -202,13 +206,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<span class="about-top-w3">Versatile Web Designer</span>
 			<h4 class="title-w3ls">Work Experience（自己的项目历程）</h4>
 			<div class="work-info"> 
+
 				<div class="col-md-6 work-left"> 
 					<h4>2016 - 2017</h4>
 				</div>
 				<div class="col-md-6 work-right"> 
+					<div class="dmy">
 					<h5><span class="glyphicon glyphicon-briefcase"> </span>第一个项目</h5>
-					<div class="logoss">
-						<img src="images/one.jpg" alt="">
+					<div class="logoss" style="background:url(images/one.jpg);background-size: cover">
 					</div>
 					<!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo </p> -->
 				</div>
@@ -220,8 +225,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-6 work-left work-left2"> 
 					<h5> 第二个项目 <span class="glyphicon glyphicon-briefcase"> </span></h5>
-					<div class="logoss">
-						<img src="images/two.png" alt="">
+					<div class="logoss" style="background:url(images/two.png);background-size: 100% 100%">
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -232,8 +236,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-6 work-right"> 
 					<h5><span class="glyphicon glyphicon-briefcase"> </span> Web Developer</h5>
-					<div class="logoss">
-						<img src="images/three.png" alt="">
+					<div class="logoss" style="background:url(images/three.png);background-size: 100% 100%">
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -244,8 +247,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-6 work-left work-left2"> 
 					<h5> 第四个项目 <span class="glyphicon glyphicon-briefcase"></span> </h5>
-					<div class="logoss">
-						<img src="images/four.png" alt="">
+					<div class="logoss" style="background:url(images/four.png);background-size: 100% 100%">
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -469,11 +471,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //about -->
 
-	<div class="footer">
-		<div class="container">
-			<p>© 2017 Elegant Resume. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
-		</div>
-	</div>
 <!-- //footer -->
 <script src="js/bars.js"></script>
 
