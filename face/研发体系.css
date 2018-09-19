@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+html,body{
+	width: 100%;
+	overflow-x: hidden;
+}
+.max_800_top{
+	display: none;
+}
+#tops{
+	width:100%;
+	height: 80px;
+	/*border:1px solid red;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	/*display: none;*/
+}
+#tops .top_center{
+	width: 80%;
+	height: 80px;
+	margin: 0 auto;
+	/*border:1px solid blue;*/
+	/*background-color:pink;*/
+}
+.top_logo{
+	width: 20%;
+	height: 40px;
+	/*border:1px solid red;*/
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	line-height: 80px;
+}
+.top_daohang{
+	width:55%;
+	height: 80px;
+	/*border:1px solid red;*/
+	float: right;
+}
+.top_daohang ul .one_lis{
+	text-align: center;
+	float: left;
+	width: 15%;
+	height:60px;
+	line-height: 60px;
+	margin-top: 10px;
+	color: white;
+	font-size: .9rem;
+	margin-left: 20px;
+	/*border:1px solid red*/
+}
+.top_daohang ul .one_lis .xiala_box{
+	width:500px;
+	height: 320px;
+	/*border:1px solid red;*/
+	/*list-style: none;*/
+	/*float: left;*/
+	text-align: left;
+	background-color:#212120;
+	display: none;
+}
+.xiala_box .top_box1{
+	width: 200px;
+	height: 300px;
+	float: left;
+	line-height: 40px;
+	margin-left: 30px;
+	margin-top: 15px;
+	background-color:#212120;
+}
+.xiala_box .top_box1 h3{
+	color: white;
+}
+.xiala_box .top_box1 span a{
+	color: gray;
+	transition: all .8s ease 0s;
+	text-overflow: ellipsis;
+	white-space: nowrap; 
+	overflow: hidden;
+}
+.xiala_box .top_box1 span a:hover{
+	color: white;
+}
+.top_daohang ul .one_lis ul{
+	display: none;
+}
+.top_daohang ul .one_lis ul li{
+	/*border:1px solid red;*/
+	background-color:#212120 ;
+	
+}
+.sec .banner{
+    /*margin-top: 84px;*/
+    width: 100%;
+    background-image: url(https://assets.megvii.com/static%2Fimages/technology/banner-0ba728a290.jpg);
+    height: 316px;
+}
+.sec .banner::before{
+    content: "";
+    display: block;
+    height: 84px;
+}
+.sec .banner h1{
+    text-align: left;
+    line-height: normal;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    font-size: 48px;
+    color: #fff;
+    font-weight: 600;
+}
+.sec .banner h2{
+    line-height: inherit;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 18px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+}
+.sec .banner h3{
+    line-height: inherit;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 18px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+
+.sec .technology{
+    padding-top: 135px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.sec .technology h2{
+    font-size: 25px;
+    height: 20px;
+    border-bottom: 1px solid #999;
+    overflow: normal;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: -5px;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 90px;
+}
+.sec .technology h2 span{
+    width: 272px;
+    color: #333;
+    background: white;
+    line-height: 40px;
+    display: inline-block;
+}
+.sec .technology .systemBoxC{
+    margin-bottom: 100px;
+    line-height: 24px;
+    font-size: 14px;
+    width: 100%;
+    color: #676767;
+}
+.sec .technology .systemBoxC .systemContent{
+    margin-bottom: 35px;
+}
+.sec .technology .skillSrcC{
+    margin-bottom: 0;
+    width: 100%;
+    height: 530px;
+    text-align: center;
+}
+.sec .technology .skillSrcC img{
+    display: block;
+    margin: 0 auto;
+}
+.sec .technology ul{
+    list-style: none;
+    width: 100%;
+}
+.sec .technology ul li{
+    background-color: #f9f9f9;
+    padding: 90px 0;
+    display: inline-block;
+}
+.sec .technology ul li .box{
+    width: 1200px;
+    margin: 0 auto;
+    zoom: 1;
+}
+.sec .technology ul li .box .right_box{
+    float: left;
+    padding-bottom: 0;
+    width: 465px;
+    padding-top: 14px;
+    position: relative;
+}
+.sec .technology ul li .box .left_box{
+    float: right;
+    height: 320px;
+    width: 570px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.sec .technology ul li .box .right_box img{
+    height: auto;
+    vertical-align: middle;
+}
+.sec .technology ul li .box .right_box h3{
+    display: block;
+    margin-left: 0;
+    font-size: 36px;
+    color: #3e3e3e;
+    vertical-align: middle;
+    line-height: 85px;
+}
+.sec .technology ul li .box .right_box p{
+    font-size: 14px;
+    color: #3e3e3e;
+    line-height: 24px;
+}
+.sec .technology ul .two{
+    background-color: #fff;
+}
+.sec .technology ul .two .box .left_box{
+    width: 465px;
+}
+.sec .technology ul .two .box .left_box img{
+    height: auto;
+    vertical-align: middle;
+}
+.sec .technology ul .two .box .left_box h3{
+    display: block;
+    margin-left: 0;
+    font-size: 36px;
+    color: #3e3e3e;
+    vertical-align: middle;
+    line-height: 85px;
+}
+.sec .technology ul .two .box .left_box p{
+    font-size: 14px;
+    color: #3e3e3e;
+    line-height: 24px;
+}
+.sec .technology ul li .icons{
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    margin-left: -42.5px;
+    margin-top: -42.5px;
+    background-image: url(https://assets.megvii.com/static/images/common/video_playbtn.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-style: italic;
+}
+ footer{
+            width: 100%;
+            height: 470px;
+            z-index: 10;
+            background: #171717;
+        }
+        footer .foot{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 0 65px;
+        }
+        footer .foot .foot_left{
+            float: left;
+            width: 565px;
+            font-size: 14px;
+        }
+        footer .foot .foot_left .img1{
+            padding: 15px 0;
+        }
+        footer .foot .foot_left h3{
+            font-size: 24px;
+            margin-bottom: 48px;
+            color:white;
+        }
+        footer .foot .foot_left .p1{
+            color: #707070;
+            font-size: 14px;
+            line-height: 30px;
+        }
+        footer .foot .foot_left ul{
+            list-style: none;
+            padding-top: 63px;
+            display: inline-block;
+        }
+        footer .foot .foot_left ul li{
+            float: left;
+            margin-left: 10px;
+        }
+        footer .foot .foot_left ul li a i{
+            width: 28px;
+            height: 27px;
+            text-indent: -999em;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            font-style: italic;
+        }
+        footer .foot .foot_left ul li:nth-child(1) a i{
+            background-image: url(https://assets.megvii.com/static/images/common/icons/icon_weixin.png);
+        }
+        footer .foot .foot_left ul li:nth-child(2) a i{
+            background-image: url(https://assets.megvii.com/static/images/common/icons/icon_weibo.png);
+        }
+        footer .foot .foot_left ul li:nth-child(3) a i{
+            background-image: url(https://assets.megvii.com/static/images/common/icons/icon_twitter.png);
+        }
+        footer .foot .foot_left ul li:nth-child(4) a i{
+            background-image: url(https://assets.megvii.com/static/images/common/icons/icon_facebook.png);
+        }
+        footer .foot .foot_left .p2{
+            margin-top: 10px;
+            font-size: 14px;
+            max-width: 1200px;
+            color: #707070;
+        }
+        footer .foot .foot_left .p2 a{
+            text-decoration: none;
+            color:#707070;
+        }
+        footer .foot .foot_center{
+            overflow: inherit;
+            float: left;
+            width: 100px;
+            padding-top: 55px;
+            font-size: 14px;
+            color: #fff;
+        }
+        footer .foot .foot_center h2{
+            text-align: inherit;
+            margin-bottom: 35px;
+            font-size: 24px;
+            width: 100%;
+        }
+        footer .foot .foot_center h3{
+            font-size: 14px;
+            margin-top: 0;
+            margin-right: 0;
+            float: none;
+            height: 25px;
+        }
+        footer .foot .foot_right{
+            float: right;
+            padding-top: 42px;
+            font-size: 14px;
+            color: #fff;
+        }
+        footer .foot .foot_right h2{
+            text-align: left;
+            line-height: 50px;
+            height: 50px;
+            font-size: 24px;
+        }
+        footer .foot .foot_right p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        footer .foot .foot_right p span{
+            line-height: 18px;
+            min-width: 84px;
+            height: 18px;
+            display: inline-block;
+        }
+        footer .foot .foot_right p i{
+            display: inline-block;
+            margin-top: 0;
+            margin-right: 10px;
+            float: none;
+            background-size: auto;
+            background-image: url(https://assets.megvii.com/static/images/common/icons/icon_email.png);
+            height: 18px;
+            width: 18px;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            font-style: italic;
+            cursor: pointer;
+        }
+        footer .foot .foot_right .suo{
+            background-image: url(https://assets.megvii.com/static/images/common/icons/icon_link.png);
+        }
+        footer .foot .foot_right .hua{
+            background-image: url(https://assets.megvii.com/static/images/common/icons/icon_phone.png);
+        }
+        footer .foot .foot_right .p2{
+            margin-left: 83px;
+        }
+

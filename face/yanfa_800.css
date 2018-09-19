@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	
+}
+ul{
+	list-style: none;
+}
+html,body{
+	width: 100%;
+	overflow-x: hidden;
+	font-size: 15px;
+}
+.max_800_top{
+	width: 100%;
+	height: 5rem;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	line-height: 5rem;
+}
+.max_800_top .max_top_logo{
+	width:150px;
+	/*height: 60%;*/
+	/*border:2px solid gold;*/
+	float: left;
+	margin-top: 1.3%;
+}
+.max_800_top .max_top_logo img{
+	width: 100%;
+	height: 100%;
+}
+.max_top_xiala{
+	width: 10%;
+	height: 5rem;
+	float: right;
+	/*border:1px solid red;*/
+	margin-right: 5%;
+
+}
+.max_top_xiala{
+    display: block;
+    position: absolute;
+    top:25%;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.max_top_xiala .s-gang{
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    transition: background 0.3s ;
+    display: inline-block;
+    height: 3px;
+    width: 24px;
+    background:white;
+}
+.max_top_xiala .s-gang:before {
+    content: '';
+    transform: translateZ(0);
+    transform-origin: 0% 50%;
+    transition: transform .8s ;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    height: 3px;
+    width: 24px;
+   background:white;
+}
+.max_top_xiala .s-gang:after{
+    content: '';
+    right: 0;
+    backface-visibility: hidden;
+    transition: transform .8s ;
+    position: absolute;
+    top:13px;
+    display: inline-block;
+    height: 3px;
+    width: 24px;
+    background:white;
+}
+
+.max_xiala_centent{
+	width: 100%;
+	height: 100%;
+	margin-top: 4rem;
+	overflow: auto;
+	background-color: #282830;
+	transition: all 1s ease 0s;
+	position: fixed;
+	right: -100%;
+	
+}
+.x_hao {
+    background: rgba(46, 50, 51, 0);
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    margin-top: -2px;
+    transition: background 0.3s ;
+    display: inline-block;
+    height: 3px;
+    width: 24px;
+}
+.x_hao:before{
+    transform: translateX(4px) translateY(-3px) rotate(45deg);
+    background-color: white;
+    top: -2.5px;
+    content: '';
+    right:10px;
+    transform-origin: 0% 50%;
+    transition: transform 0.8s ;
+    position: absolute;
+    display: inline-block;
+    height: 3px;
+    width: 24px;
+}
+.x_hao:after{
+    transform: translateX(4px) translateY(2px) rotate(-45deg);
+    background-color: white;
+    top: 1.5px;
+    content: '';
+    right: 15px;
+    backface-visibility: hidden;
+    transition: transform 0.8s ;
+    position: absolute;
+    display: inline-block;
+    height: 3px;
+    width: 24px;
+}
+
+.max_xiala_centent ul .max_xiala_li{
+	width: 100%;
+	height:5rem;
+	text-align: center;
+	line-height: 5rem;
+	color: white;
+	overflow: hidden;
+	transition: all 1s ease 0s;
+	/*border:1px solid white;*/
+}
+/*.max_xiala_centent ul .max_xiala_li:hover{
+	height: 25rem;
+} */
+.max_xiala_centent ul .max_xiala_li ul li{
+	width: 100%;
+	height: 5rem;
+	/*border:1px solid black;*/
+}
+.max_xiala_centent ul .max_xiala_li a{
+	color: white;
+	font-size: 1.4rem;
+	position: relative;
+}
+
+.max_xiala_centent ul .max_xiala_li a::after{
+    content: "";
+	top: 1.4rem;
+    /*transform: rotate(-45deg);*/
+    /*display: none;*/
+    position: absolute;
+    left: 8rem;
+    top: .5rem;
+    width: .6rem;
+    height: .6rem;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: all .3s ease 0s;
+    transform: rotate(-45deg);	
+	/*border:1px solid red*/
+}
+#tops{
+	width:100%;
+	height: 80px;
+	/*border:1px solid red;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
+}
+#tops .top_center{
+	width: 80%;
+	height: 80px;
+	margin: 0 auto;
+	/*border:1px solid blue;*/
+	/*background-color:pink;*/
+}
+.top_logo{
+	width: 20%;
+	height: 40px;
+	/*border:1px solid red;*/
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	line-height: 80px;
+}
+.top_daohang{
+	width:55%;
+	height: 80px;
+	/*border:1px solid red;*/
+	float: right;
+}
+.top_daohang ul .one_lis{
+	text-align: center;
+	float: left;
+	width: 15%;
+	height:60px;
+	line-height: 60px;
+	margin-top: 10px;
+	color: white;
+	font-size: .9rem;
+	margin-left: 20px;
+	/*border:1px solid red*/
+}
+.top_daohang ul .one_lis .xiala_box{
+	width:500px;
+	height: 320px;
+	/*border:1px solid red;*/
+	/*list-style: none;*/
+	/*float: left;*/
+	text-align: left;
+	background-color:#212120;
+	display: none;
+}
+.xiala_box .top_box1{
+	width: 200px;
+	height: 300px;
+	float: left;
+	line-height: 40px;
+	margin-left: 30px;
+	margin-top: 15px;
+	background-color:#212120;
+}
+.xiala_box .top_box1 h3{
+	color: white;
+}
+.xiala_box .top_box1 span a{
+	color: gray;
+	transition: all .8s ease 0s;
+	text-overflow: ellipsis;
+	white-space: nowrap; 
+	overflow: hidden;
+}
+.xiala_box .top_box1 span a:hover{
+	color: white;
+}
+.top_daohang ul .one_lis ul{
+	display: none;
+}
+.top_daohang ul .one_lis ul li{
+	/*border:1px solid red;*/
+	background-color:#212120 ;
+	
+}
+.sec .banner{
+    /*margin-top: 84px;*/
+    width: 100%;
+    background: url(https://assets.megvii.com/static%2Fimages/technology/banner-0ba728a290.jpg);
+    height: 316px;
+	background-size: cover;
+	
+}
+.sec .banner::before{
+    content: "";
+    display: block;
+    height: 84px;
+}
+.sec .banner h1{
+   text-align: center;
+    line-height: normal;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+	font-size: 2rem;
+	color: #fff;
+    font-weight: 600;
+}
+.sec .banner h2{
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+	font-size: 1rem;
+	margin-bottom: 0;
+	text-align: center;
+	line-height: 1.8;
+}
+.sec .banner h3{
+   max-width: 1200px;
+   margin: 0 auto;
+   color: #fff;
+   font-size: 1rem;
+   margin-bottom: 0;
+   text-align: center;
+   line-height: 1.8;
+}
+
+
+.sec .technology{
+    padding-top: 30px;
+    width:100%;
+    margin: 0 auto;
+}
+.sec .technology h2{
+    /*font-size: 25px;*/
+    height: 20px;
+    border-bottom: 1px solid #999;
+    overflow: normal;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: -5px;
+		width: 50%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 90px;
+}
+.sec .technology h2 span{
+		display: inline-block;
+		color: #3b3b3c;
+    display: inline-block;
+    font-weight: 700;
+		font-size: 1.13rem;
+		height: 1.18rem;
+}
+.sec .technology .systemBoxC{
+	width: 90%;
+	margin: 0 auto;
+   line-height: 1.5;
+   color: #676767;
+	 margin-bottom: 1.59rem;
+	 font-size: .8rem;
+}
+.sec .technology .systemBoxC .systemContent{
+    margin-bottom: 35px;
+}
+.sec .technology .skillSrcC{
+       margin-bottom: 3rem;
+			 width: 100%;
+			 height: auto;
+			 text-align: center;
+}
+.sec .technology .skillSrcC img{
+	width: 100%;
+	height: 100%;
+    display: block;
+    margin: 0 auto;
+		background-size:cover;
+}
+.sec .technology ul{
+    list-style: none;
+    width: 100%;
+		
+}
+.sec .technology ul li{
+    background-color: #f9f9f9;
+    padding: 90px 0;
+    display: inline-block;
+}
+.sec .technology ul li .box{
+    width:100%;
+    margin: 0 auto;
+		/*border:1px solid red;*/
+    /*zoom: 1;*/
+}
+.sec .technology ul li .box .left_box{
+    /*float: right;*/
+    height: 320px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.sec .technology ul li .box .right_box{
+    /*float: left;*/
+    padding-bottom: 0;
+    width:90%;
+    padding-top: 14px;
+		margin: 0 auto;
+    /*position: relative;*/
+		/*border:1px solid gold;*/
+}
+
+.sec .technology ul li .box .right_box img{
+		float: left;
+		width:15%;
+		height: 15%;
+		/*border:1px solid red;*/
+    height: auto;
+    vertical-align: middle;
+		/*display: inline-block;*/
+}
+.sec .technology ul li .box .right_box h3{
+    display:inline-block;
+    font-size:2.5rem;
+    color: #999;
+    vertical-align: middle;
+    line-height:50px;
+		margin-left:5%;
+}
+.sec .technology ul li .box .right_box p{
+	width: 100%;
+	/*border:1px solid red;*/
+	margin: 0 auto;
+  font-size: 14px;
+  color: #3e3e3e;
+  line-height: 24px;
+}
+.sec .technology ul .two{
+    background-color: #fff;
+		margin: 0 auto;
+}
+.sec .technology ul .two .box {
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+	/*border:1px solid red;*/
+}
+.sec .technology ul .two .box .left_box{
+    width:90%;
+		margin: 0 auto;
+}
+.sec .technology ul .two .box .right_box{
+    width:100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+}
+.sec .technology ul .two .box .left_box img{
+   float: left;
+   width:20%;
+   height: 20%;
+   /*border:1px solid red;*/
+   height: auto;
+   vertical-align: middle;
+}
+.sec .technology ul .two .box .left_box h3{
+   display:inline-block;
+   font-size:2.5rem;
+   color: #999;
+   vertical-align: middle;
+   line-height:50px;
+   margin-left:5%;
+}
+.sec .technology ul .two .box .left_box p{
+    width: 100%;
+    /*border:1px solid red;*/
+    margin: 0 auto;
+    font-size: 14px;
+    color: #3e3e3e;
+    line-height: 24px;
+}
+.sec .technology ul li .icons{
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    margin-left: -42.5px;
+    margin-top: -42.5px;
+    background-image: url(https://assets.megvii.com/static/images/common/video_playbtn.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-style: italic;
+}
+ footer{
+            width: 100%;
+            height: 800px;
+            z-index: 10;
+            background: #171717;
+						/*display: none;*/
+						text-align:center;
+        }
+        footer .foot{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 0 65px;
+        }
+        footer .foot .foot_left{
+            float: left;
+            width: 100%;
+            font-size: 14px;
+        }
+        footer .foot .foot_left .img1{
+            padding: 15px 0;
+        }
+        footer .foot .foot_left h3{
+            font-size: 24px;
+            /*margin-bottom: 48px;*/
+            color:white;
+        }
+        footer .foot .foot_left .p1{
+            color: #707070;
+            font-size: 14px;
+            line-height: 30px;
+						margin-top: 30px;
+        }
+        footer .foot .foot_left ul{
+            list-style: none;
+            /*padding-top: 63px;*/
+            display: inline-block;
+						display: none;
+        }
+        footer .foot .foot_left ul li{
+            float: left;
+            margin-left: 10px;
+        }
+        footer .foot .foot_left ul li a i{
+            width: 28px;
+            height: 27px;
+            text-indent: -999em;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            font-style: italic;
+        }
+        footer .foot .foot_left ul li:nth-child(1) a i{
+            background-image: url(https://assets.megvii.com/static/images/common/icons/icon_weixin.png);
+        }
+        footer .foot .foot_left ul li:nth-child(2) a i{
+            background-image: url(https://assets.megvii.com/static/images/common/icons/icon_weibo.png);
+        }
+        footer .foot .foot_left ul li:nth-child(3) a i{
+            background-image: url(https://assets.megvii.com/static/images/common/icons/icon_twitter.png);
+        }
+        footer .foot .foot_left ul li:nth-child(4) a i{
+            background-image: url(https://assets.megvii.com/static/images/common/icons/icon_facebook.png);
+        }
+        footer .foot .foot_left .p2{
+            /*margin-top: 10px;*/
+            font-size: 14px;
+            max-width: 1200px;
+            color: #707070;
+        }
+        footer .foot .foot_left .p2 a{
+            text-decoration: none;
+            color:#707070;
+        }
+        footer .foot .foot_center{
+            overflow: inherit;
+            float: left;
+            width: 100%;
+            padding-top: 20px;
+            font-size: 14px;
+            color: #fff;
+        }
+        footer .foot .foot_center h2{
+            text-align: inherit;
+            margin-bottom: 10px;
+            font-size: 24px;
+            width: 100%;
+        }
+        footer .foot .foot_center h3{
+            font-size: 14px;
+            margin-top: 0;
+            margin-right: 0;
+            float: none;
+            height: 25px;
+        }
+        footer .foot .foot_right{
+            float: right;
+            /*padding-top: 42px;*/
+            font-size: 14px;
+            color: #fff;
+						width: 100%;
+        }
+        footer .foot .foot_right h2{
+            /*text-align: left;*/
+            line-height: 50px;
+            height: 50px;
+            font-size: 24px;
+						margin-top:20px;
+        }
+        footer .foot .foot_right p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        footer .foot .foot_right p span{
+            line-height: 18px;
+            min-width: 84px;
+            height: 18px;
+            display: inline-block;
+        }
+        footer .foot .foot_right p i{
+            display: inline-block;
+            margin-top: 0;
+            margin-right: 10px;
+            float: none;
+            background-size: auto;
+            background-image: url(https://assets.megvii.com/static/images/common/icons/icon_email.png);
+            height: 18px;
+            width: 18px;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            font-style: italic;
+            cursor: pointer;
+        }
+        footer .foot .foot_right .suo{
+            background-image: url(https://assets.megvii.com/static/images/common/icons/icon_link.png);
+        }
+        footer .foot .foot_right .hua{
+            background-image: url(https://assets.megvii.com/static/images/common/icons/icon_phone.png);
+        }
+        footer .foot .foot_right .p2{
+            margin-left: 83px;
+        }
+
